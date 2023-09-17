@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-------------links--------------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body style="overflow-x: hidden;">
+    <!------------------- NAVBAR------------------------>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fw-bold" data-bs-theme="dark"
+        style="position: sticky; top: 0px; z-index: 1;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" style="margin-right: 200px; margin-left: 25px;"><i
+                    class="fa-brands fa-slack"></i> AchieverIT</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-house"></i>
+                            Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            courses
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#TRENDING COURSES">TRENDING COURSES</a></li>
+                            <li><a class="dropdown-item" href="#RECENT ADDITIONS">RECENT ADDITIONS</a></li>
+                        </ul>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./Corporate training.html">Corporate Training</a>
+                    </li>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./intership.html">Intership</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./placement.html"> Placement</a>
+                    </li>
+
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success me-2" type="submit">Search</button>
+                    <button type="button" class="btn btn-outline-info me-2" data-bs-toggle="modal"
+                        data-bs-target="#signupModal">signup</button>
+                    <button type="button" class="btn btn-outline-secondary me-2" data-bs-toggle="modal"
+                        data-bs-target="#loginModal">login</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!---------------Nav bar end------------------->
+
+    <!-------------Model Start------------------>
+
+    <!----signup----->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="signupModalLabel">Signup</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="signupInputEmail1"
+                                aria-describedby="emailHelp">
+
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="signupInputPassword1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label"> Re Enter Password</label>
+                            <input type="password" class="form-control" id="signupInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="signupCheck1">
+                            <label class="form-check-label" for="exampleCheck1">I agree terms and conditions </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">sign up</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------log in-------------->
+
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="loginModalLabel">log in</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="loginInputEmail1" aria-describedby="emailHelp">
+
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="loginInputPassword1">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">login</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------Carousel Banner------------------->
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" style="z-index: -1;">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./assets/development.jpg" class="d-block w-100" alt="img1" height="500px">
+            </div>
+            <div class="carousel-item">
+                <img src="./assets/Web-Developer-R.jpg" class="d-block w-100" alt="img2" height="500px">
+            </div>
+            <div class="carousel-item">
+                <img src="./assets/react.jpg" class="d-block w-100" alt="img3" height="500px">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!------TRENING----------->
+    <!-- TRENDING COURSES START -->
+    <section id="TRENDING COURSES" class="h2  text-center fw-bold" style="margin-bottom: 20px; padding-top: 50px;">
+        TRENDING COURSES
+    </section>
+    <section class="row" style="margin-left: 50px; margin-left: 50px; z-index: 2;">
+        <div class="card ms-5 mb-3 text-bg-light col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3 "
+            style="width: 18rem; outline-color: lightskyblue;">
+            <img src="./assets/image 1.png" class="card-img-top" alt="angular" height="150px">
+            <div class="card-body">
+                <h5 class="card-title">ANGULAR DEVELOPER</h5>
+                <p class="card-text">Angular is popular for making dynamic applications and its information official and
+                    reliance infusion includes altogether lessen </p>
+                <a href="#" class="btn btn-outline-warning">View Details</a>
+            </div>
+        </div>
+        <div class="card ms-5 mb-3 text-bg-light col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3" style="width: 18rem;">
+            <img src="./assets/react-img2.png" class="card-img-top" alt="angular">
+            <div class="card-body">
+                <h5 class="card-title">React Js</h5>
+                <p class="card-text">Achievers IT React JS Certification Course in Bangalore. We taught you in detailed
+                    explanations of what React JS is, why we use React JS.</p>
+                <a href="#" class="btn btn-outline-warning">View Details</a>
+            </div>
+        </div>
+        <div class="card ms-5 mb-3 text-bg-light col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3" style="width: 18rem;">
+            <img src="./assets/mean-img 3.jpg" class="card-img-top" alt="angular">
+            <div class="card-body">
+                <h5 class="card-title">Mean Stack</h5>
+                <p class="card-text">MEAN Stack Front To Back". In this course we will build an in depth full stack
+                    social network application using Angular, Express, React.</p>
+                <a href="#" class="btn btn-outline-warning">View Details</a>
+            </div>
+        </div>
+        <div class="card ms-5 mb-3 text-bg-light col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3" style="width: 18rem;">
+            <img src="./assets/mern-img 4.jpg" class="card-img-top" alt="angular">
+            <div class="card-body">
+                <h5 class="card-title">MERN Stack Front To Back</h5>
+                <p class="card-text">"MERN Stack Front To Back". In this course we will build an in depth full stack
+                    social network application using Node.js. </p>
+                <a href="#" class="btn btn-outline-warning">View Details</a>
+            </div>
+        </div>
+        <div class="card ms-5 mb-3 text-bg-light col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3" style="width: 18rem;">
+            <img src="./assets/web-dev-img 5.jpeg" class="card-img-top" alt="angular">
+            <div class="card-body">
+                <h5 class="card-title">Web Development</h5>
+                <p class="card-text">We are one of the top web training institutes in Bangalore offering advanced web
+                    development courses to our students. Students will get Trained from Professional Experts of Web
+                    Development Course,</p>
+                <a href="#" class="btn btn-outline-warning">View Details</a>
+            </div>
+        </div>
+        <div class="card ms-5 mb-3 text-bg-light col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3" style="width: 18rem;">
+            <img src="./assets/digital_marketing 6.jpg" class="card-img-top" alt="angular">
+            <div class="card-body">
+                <h5 class="card-title">Digatal Marketing</h5>
+                <p class="card-text">The Digital Marketing program from Achieversit will enable you to understand
+                    digital customer behavior, build digital marketing strategies, and identify in-demand metrics to
+                    effectively measure and optimize ROI.</p>
+                <a href="#" class="btn btn-outline-warning">View Details</a>
+            </div>
+        </div>
+        <div class="card ms-5 mb-3 text-bg-light col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3" style="width: 18rem;">
+            <img src="./assets/Web-Development-7.png" class="card-img-top" alt="angular">
+            <div class="card-body">
+                <h5 class="card-title">Workpress development</h5>
+                <p class="card-text">A WordPress developer is a type of web developer. They specialize in building
+                    websites with WordPress. They are also full-stack developers, meaning they can develop the front-end
+                    and back-end of a website.</p>
+                <a href="#" class="btn btn-outline-warning">View Details</a>
+            </div>
+        </div>
+        <div class="card ms-5 mb-3 text-bg-light col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3" style="width: 18rem;">
+            <img src="./assets/python-img8.jpg" class="card-img-top" alt="angular" style="height: 150px;">
+            <div class="card-body">
+                <h5 class="card-title">python</h5>
+                <p class="card-text">Python is a high-level, general-purpose programming language. Its design philosophy
+                    emphasizes code readability with the use of significant indentation. Python is dynamically typed and
+                    garbage-collected. </p>
+                <a href="#" class="btn btn-outline-warning">View Details</a>
+            </div>
+        </div>
+    </section>
+    <!-- TRENDING COURSES END -->
+
+    <!-- RECENT ADDITIONS END -->
+    <section id="RECENT ADDITIONS" class="h2 m-4 text-center fw-bold">
+        RECENT ADDITIONS
+    </section>
+    <section class="row" style="margin-left: 50px; margin-left: 50px; z-index: -1;">
+        <div class="card ms-5 mb-3 text-bg-light col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 "
+            style="width: 18rem; outline-color: lightskyblue;">
+            <img src="./assets/1.jpg" class="card-img-top" alt="angular" height="150px">
+            <div class="card-body">
+                <h5 class="card-title">UI developer</h5>
+                <p class="card-text">A UI developer's role is to translate creative software design concepts and ideas
+                    into reality using front end technology. They understand the user interface design solution both in
+                    its practical intent and creative vision</p>
+                <a href="#" class="btn btn-outline-warning">View Details</a>
+            </div>
+        </div>
+        <div class="card ms-5 mb-3 text-bg-light col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 "
+            style="width: 18rem; outline-color: lightskyblue;">
+            <img src="./assets/2.jpeg" class="card-img-top" alt="angular" height="150px">
+            <div class="card-body">
+                <h5 class="card-title">Vue.js</h5>
+                <p class="card-text">Vue.js is an open-source model view viewmodel front end JavaScript library for
+                    building user interfaces and single-page applications. It was created by Evan You, and is maintained
+                    by him and the rest of the active core team members.</p>
+                <a href="#" class="btn btn-outline-warning">View Details</a>
+            </div>
+        </div>
+        <div class="card ms-5 mb-3 text-bg-light col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 "
+            style="width: 18rem; outline-color: lightskyblue;">
+            <img src="./assets/3.png" class="card-img-top" alt="angular" height="150px">
+            <div class="card-body">
+                <h5 class="card-title">JAVA</h5>
+                <p class="card-text">What Java is used for?
+                    Java is a multi-platform, object-oriented, and network-centric language that can be used as a
+                    platform in itself. It is a fast, secure, reliable programming language for coding everything from
+                    mobile apps and enterprise</p>
+                <a href="#" class="btn btn-outline-warning">View Details</a>
+            </div>
+        </div>
+        <div class="card ms-5 mb-3 text-bg-light col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 "
+            style="width: 18rem; outline-color: lightskyblue;">
+            <img src="./assets/4.png" class="card-img-top" alt="angular" height="150px">
+            <div class="card-body">
+                <h5 class="card-title">Ionic</h5>
+                <p class="card-text">Ionic is a complete open-source SDK for hybrid mobile app development created by
+                    Max Lynch, Ben Sperry, and Adam Bradley of Drifty Co. in 2013. The original version was released in
+                    2013 and built on top </p>
+                <a href="#" class="btn btn-outline-warning">View Details</a>
+            </div>
+        </div>
+
+    </section>
+    <!-- RECENT ADDITIONS END -->
+    <!-- FOOTER START -->
+    <div class="container">
+        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-4 my-4 py-5 border-top">
+            <div class="col mb-1">
+                <h5 style="font-size: 35px;"><i class="fa-brands fa-react"></i>AchiversIT</h5> <br>
+                <p class="text-body-secondary">AchieversIT - Provides a wide group of opportunities for freshers and
+                    Experienced candidate who can develop their skills and build their career opportunities across
+                    multiple Companies.</p>
+            </div>
+
+            <div class="col mb-1" style="padding-left: 90px;">
+                <h5>COMPANY</h5> <br>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+                    <li class="nav-item mb-2"><a href="./placement.html"
+                            class="nav-link p-0 text-body-secondary">Placements</a></li>
+                    <li class="nav-item mb-2"><a href="./intership.html"
+                            class="nav-link p-0 text-body-secondary">Internship</a></li>
+                    <li class="nav-item mb-2"><a href="./Corporate training.html"
+                            class="nav-link p-0 text-body-secondary">Corporate Training</a></li>
+                </ul>
+            </div>
+
+            <div class="col mb-1">
+                <h5>TRENDING COURSES</h5> <br>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Web Development</a>
+                    </li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">React JS</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Java</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Python</a></li>
+                    <li class="nav-item mb-1"><a href="#" class="nav-link p-0 text-body-secondary">Digitol Marketing</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col mb-1">
+                <h5>CONTACT INFO</h5> <br>
+                <ul class="nav flex-column">
+                    <p class="mb-2"><i class="fa-solid fa-map-location-dot"></i> #63, 1st Floor, 16th
+                        Main, 8th Cross,BTM 1st Stage, Bangalore, India - 560029</p>
+                    <p class="mb-2"><i class="fa-solid fa-phone-volume"></i> India : +91
+                        8431-040-457</p>
+                    <p class="mb-1"><i class="fa-solid fa-envelope"></i> info@achieversit.com</p>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    <!-- FOOTER END -->
